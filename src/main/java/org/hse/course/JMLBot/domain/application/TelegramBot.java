@@ -11,11 +11,14 @@ import org.springframework.stereotype.Component;
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;
 import org.telegram.telegrambots.meta.api.methods.commands.SetMyCommands;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
+import org.telegram.telegrambots.meta.api.methods.updatingmessages.EditMessageText;
 import org.telegram.telegrambots.meta.api.objects.Chat;
 import org.telegram.telegrambots.meta.api.objects.Message;
 import org.telegram.telegrambots.meta.api.objects.Update;
 import org.telegram.telegrambots.meta.api.objects.commands.BotCommand;
 import org.telegram.telegrambots.meta.api.objects.commands.scope.BotCommandScopeDefault;
+import org.telegram.telegrambots.meta.api.objects.replykeyboard.InlineKeyboardMarkup;
+import org.telegram.telegrambots.meta.api.objects.replykeyboard.buttons.InlineKeyboardButton;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 
 import java.sql.Timestamp;
@@ -35,6 +38,8 @@ public class TelegramBot extends TelegramLongPollingBot {
     private PunRepository punRepository;
 
     final BotConfig config;
+    static final String YES_BUTTON = "YES_BUTTON";
+    static final String NO_BUTTON = "NO_BUTTON";
 
     static final String HELP_TEXT = """
             Данный бот демонстрирует возможности SpringBoot
@@ -48,6 +53,8 @@ public class TelegramBot extends TelegramLongPollingBot {
 
     static final String UNKNOWN_TEXT = "Данная команда не поддерживается";
     static final String SUCCESS_ADDING_TEXT = "Каламбур добавлен";
+    static final String ERROR_TEXT = "Произошла ошибка: ";
+    static String PUN_TO_ADD;
 
     public TelegramBot(BotConfig config) {
 
@@ -84,9 +91,8 @@ public class TelegramBot extends TelegramLongPollingBot {
 
             if (messageText.contains("/addpun") && config.getOwnerId() == chatId) {
 
-                String textToAdd = messageText.substring(messageText.indexOf(" ")).trim();
-                addPun(textToAdd);
-                sendMessage(chatId, SUCCESS_ADDING_TEXT);
+                PUN_TO_ADD = messageText.substring(messageText.indexOf(" ")).trim();
+                printAlarmMessage(chatId, PUN_TO_ADD);
 
             } else {
 
@@ -110,7 +116,21 @@ public class TelegramBot extends TelegramLongPollingBot {
                         break;
                 }
             }
+        } else if (update.hasCallbackQuery()) {
+            String callbackData = update.getCallbackQuery().getData();
+            int messageId = update.getCallbackQuery().getMessage().getMessageId();
+            long chatId = update.getCallbackQuery().getMessage().getChatId();
 
+            if (callbackData.equals(YES_BUTTON)) {
+                String text = "Каламбур добавлен";
+                addPun(PUN_TO_ADD);
+                executeEditMessageText(text, chatId, messageId);
+
+            } else if (callbackData.equals(NO_BUTTON)) {
+                String text = "Каламбур НЕ добавлен";
+                executeEditMessageText(text, chatId, messageId);
+
+            }
         }
     }
 
@@ -147,6 +167,33 @@ public class TelegramBot extends TelegramLongPollingBot {
         punRepository.save(pun);
     }
 
+    public void printAlarmMessage(long chatId, String punToAdd) {
+        SendMessage message = new SendMessage();
+        message.setChatId(chatId);
+        message.setText("Действительно опубликовать текст?\n\"\n" + punToAdd + "\n\"");
+
+        InlineKeyboardMarkup markupInLine = new InlineKeyboardMarkup();
+        List<List<InlineKeyboardButton>> buttonsRows = new ArrayList<>();
+        List<InlineKeyboardButton> buttons = new ArrayList<>();
+        InlineKeyboardButton yesButton = new InlineKeyboardButton();
+        yesButton.setText("Да!");
+        yesButton.setCallbackData(YES_BUTTON);
+
+        InlineKeyboardButton noButton = new InlineKeyboardButton();
+        noButton.setText("Нет");
+        noButton.setCallbackData(NO_BUTTON);
+
+        buttons.add(yesButton);
+        buttons.add(noButton);
+
+        buttonsRows.add(buttons);
+
+        markupInLine.setKeyboard(buttonsRows);
+        message.setReplyMarkup(markupInLine);
+
+        executeMessage(message);
+    }
+
     public void printPun(long chatId) {
 
         Random random = new Random();
@@ -169,7 +216,20 @@ public class TelegramBot extends TelegramLongPollingBot {
         try {
             execute(message);
         } catch (TelegramApiException e) {
-            log.error("Произошла ошибка: " + e.getMessage());
+            log.error(ERROR_TEXT + e.getMessage());
+        }
+    }
+
+    private void executeEditMessageText(String text, long chatId, int messageId) {
+        EditMessageText message = new EditMessageText();
+        message.setChatId(chatId);
+        message.setText(text);
+        message.setMessageId(messageId);
+
+        try {
+            execute(message);
+        } catch (TelegramApiException e) {
+            log.error(ERROR_TEXT + e.getMessage());
         }
     }
 }
