@@ -21,6 +21,8 @@ import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 import java.sql.Timestamp;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
+import java.util.Random;
 
 @Slf4j
 @Component
@@ -84,7 +86,7 @@ public class TelegramBot extends TelegramLongPollingBot {
 
                 String textToAdd = messageText.substring(messageText.indexOf(" ")).trim();
                 addPun(textToAdd);
-                sendMessage(chatId, "SUCCESS_ADDING_TEXT");
+                sendMessage(chatId, SUCCESS_ADDING_TEXT);
 
             } else {
 
@@ -96,7 +98,8 @@ public class TelegramBot extends TelegramLongPollingBot {
                         break;
 
                     case "/printpun":
-
+                        printPun(chatId);
+                        break;
 
                     case "/help":
                         sendMessage(chatId, HELP_TEXT);
@@ -142,6 +145,14 @@ public class TelegramBot extends TelegramLongPollingBot {
         Pun pun = new Pun();
         pun.setText(text);
         punRepository.save(pun);
+    }
+
+    public void printPun(long chatId) {
+
+        Random random = new Random();
+        Long randomId = random.nextLong(punRepository.findMaxId() - 1) + 1;
+        Optional<Pun> punById = punRepository.findById(randomId);
+        punById.ifPresent(randomPun -> sendMessage(chatId, randomPun.getText()));
     }
 
     private void sendMessage(long chatId, String textToSend) {
