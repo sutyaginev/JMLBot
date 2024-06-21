@@ -38,3 +38,7 @@
 2024-06-21 21:06:21,072 DEBUG org.hse.course.JMLBot.JmlBotApplication [main] Running with Spring Boot v3.3.0, Spring v6.1.8
 2024-06-21 21:06:21,073 INFO org.hse.course.JMLBot.JmlBotApplication [main] No active profile set, falling back to 1 default profile: "default"
 2024-06-21 21:06:22,411 INFO org.hse.course.JMLBot.JmlBotApplication [main] Started JmlBotApplication in 1.692 seconds (process running for 2.46)
+2024-06-21 21:08:06,827 INFO org.hse.course.JMLBot.JmlBotApplication [main] Starting JmlBotApplication using Java 17.0.11 with PID 25444 (C:\JMLBot\target\classes started by Sutya in C:\JMLBot)
+2024-06-21 21:08:06,828 DEBUG org.hse.course.JMLBot.JmlBotApplication [main] Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-06-21 21:08:06,829 INFO org.hse.course.JMLBot.JmlBotApplication [main] No active profile set, falling back to 1 default profile: "default"
+2024-06-21 21:08:08,188 INFO org.hse.course.JMLBot.JmlBotApplication [main] Started JmlBotApplication in 1.686 seconds (process running for 2.456)
