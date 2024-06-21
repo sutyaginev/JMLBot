@@ -47,12 +47,13 @@ public class TelegramBot extends TelegramLongPollingBot {
             Можно выбрать команду в меню слева или написав её
                         
             /start показывает приветственное сообщение
-            /printpun покажет новый каламбур
+            /pun покажет новый каламбур
             /help покажет данное сообщение
             """;
 
     static final String UNKNOWN_TEXT = "Данная команда не поддерживается";
     static final String SUCCESS_ADDING_TEXT = "Каламбур добавлен";
+    static final String UNSUCCESS_ADDING_TEXT = "Каламбур НЕ добавлен";
     static final String ERROR_TEXT = "Произошла ошибка: ";
     static String PUN_TO_ADD;
 
@@ -61,7 +62,7 @@ public class TelegramBot extends TelegramLongPollingBot {
         this.config = config;
         List<BotCommand> listOfCommands = new ArrayList<>();
         listOfCommands.add(new BotCommand("/start", "приветствие пользователя"));
-        listOfCommands.add(new BotCommand("/printpun", "новый каламбур"));
+        listOfCommands.add(new BotCommand("/pun", "новый каламбур"));
         listOfCommands.add(new BotCommand("/help", "информация об использовании"));
 
         try {
@@ -103,7 +104,7 @@ public class TelegramBot extends TelegramLongPollingBot {
                         startCommandReceived(chatId, update.getMessage().getChat().getFirstName());
                         break;
 
-                    case "/printpun":
+                    case "/pun":
                         printPun(chatId);
                         break;
 
@@ -122,13 +123,11 @@ public class TelegramBot extends TelegramLongPollingBot {
             long chatId = update.getCallbackQuery().getMessage().getChatId();
 
             if (callbackData.equals(YES_BUTTON)) {
-                String text = "Каламбур добавлен";
                 addPun(PUN_TO_ADD);
-                executeEditMessageText(text, chatId, messageId);
+                executeEditMessageText(SUCCESS_ADDING_TEXT, chatId, messageId);
 
             } else if (callbackData.equals(NO_BUTTON)) {
-                String text = "Каламбур НЕ добавлен";
-                executeEditMessageText(text, chatId, messageId);
+                executeEditMessageText(UNSUCCESS_ADDING_TEXT, chatId, messageId);
 
             }
         }
@@ -136,7 +135,7 @@ public class TelegramBot extends TelegramLongPollingBot {
 
     private void startCommandReceived(long chatId, String name) {
 
-        String answer = "Привет, " + name + ", добро пожаловать!";
+        String answer = "Привет, " + name + ". Добро пожаловать в бот с каламбурами!";
         log.info("Ответ пользователю " + name);
 
         sendMessage(chatId, answer);

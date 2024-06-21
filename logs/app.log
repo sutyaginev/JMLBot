@@ -103,3 +103,85 @@
 2024-06-22 00:49:02,745 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
 2024-06-22 00:49:02,747 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
 2024-06-22 00:49:02,750 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2024-06-22 00:49:06,865 INFO org.hse.course.JMLBot.JmlBotApplication [main] Starting JmlBotApplication using Java 17.0.11 with PID 17900 (C:\JMLBot\target\classes started by Sutya in C:\JMLBot)
+2024-06-22 00:49:06,866 DEBUG org.hse.course.JMLBot.JmlBotApplication [main] Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-06-22 00:49:06,867 INFO org.hse.course.JMLBot.JmlBotApplication [main] No active profile set, falling back to 1 default profile: "default"
+2024-06-22 00:49:07,267 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-22 00:49:07,318 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 43 ms. Found 2 JPA repository interfaces.
+2024-06-22 00:49:07,646 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-22 00:49:07,698 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-06-22 00:49:07,729 INFO org.hibernate.cache.internal.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2024-06-22 00:49:08,000 INFO org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-22 00:49:08,031 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2024-06-22 00:49:08,192 INFO com.zaxxer.hikari.pool.HikariPool [main] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@45801322
+2024-06-22 00:49:08,194 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2024-06-22 00:49:08,226 WARN org.hibernate.orm.deprecation [main] HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-22 00:49:09,170 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-22 00:49:09,224 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-22 00:49:09,976 INFO org.springframework.data.jpa.repository.query.QueryEnhancerFactory [main] Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-06-22 00:49:10,473 INFO org.hse.course.JMLBot.JmlBotApplication [main] Started JmlBotApplication in 4.002 seconds (process running for 4.786)
+2024-06-22 01:59:43,897 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-22 01:59:43,916 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2024-06-22 01:59:43,922 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2024-06-22 02:00:12,491 INFO org.hse.course.JMLBot.JmlBotApplication [main] Starting JmlBotApplication using Java 17.0.11 with PID 23792 (C:\JMLBot\target\classes started by Sutya in C:\JMLBot)
+2024-06-22 02:00:12,493 DEBUG org.hse.course.JMLBot.JmlBotApplication [main] Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-06-22 02:00:12,493 INFO org.hse.course.JMLBot.JmlBotApplication [main] No active profile set, falling back to 1 default profile: "default"
+2024-06-22 02:00:12,911 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-22 02:00:12,966 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 47 ms. Found 2 JPA repository interfaces.
+2024-06-22 02:00:13,289 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-22 02:00:13,372 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-06-22 02:00:13,413 INFO org.hibernate.cache.internal.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2024-06-22 02:00:13,725 INFO org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-22 02:00:13,763 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2024-06-22 02:00:13,936 INFO com.zaxxer.hikari.pool.HikariPool [main] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2fd39436
+2024-06-22 02:00:13,938 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2024-06-22 02:00:13,992 WARN org.hibernate.orm.deprecation [main] HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-22 02:00:15,102 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-22 02:00:15,170 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-22 02:00:16,261 INFO org.springframework.data.jpa.repository.query.QueryEnhancerFactory [main] Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-06-22 02:00:16,788 INFO org.hse.course.JMLBot.JmlBotApplication [main] Started JmlBotApplication in 4.621 seconds (process running for 5.436)
+2024-06-22 02:01:22,667 INFO org.hse.course.JMLBot.domain.application.TelegramBot [JMLCourseBot Telegram Executor] Ответ пользователю Евгений
+2024-06-22 02:01:55,392 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-22 02:01:55,393 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2024-06-22 02:01:55,397 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2024-06-22 02:02:51,264 INFO org.hse.course.JMLBot.JmlBotApplication [main] Starting JmlBotApplication using Java 17.0.11 with PID 9008 (C:\JMLBot\target\classes started by Sutya in C:\JMLBot)
+2024-06-22 02:02:51,265 DEBUG org.hse.course.JMLBot.JmlBotApplication [main] Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-06-22 02:02:51,266 INFO org.hse.course.JMLBot.JmlBotApplication [main] No active profile set, falling back to 1 default profile: "default"
+2024-06-22 02:02:51,659 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-22 02:02:51,708 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 41 ms. Found 2 JPA repository interfaces.
+2024-06-22 02:02:52,008 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-22 02:02:52,058 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-06-22 02:02:52,089 INFO org.hibernate.cache.internal.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2024-06-22 02:02:52,338 INFO org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-22 02:02:52,361 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2024-06-22 02:02:52,524 INFO com.zaxxer.hikari.pool.HikariPool [main] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@391515c7
+2024-06-22 02:02:52,525 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2024-06-22 02:02:52,557 WARN org.hibernate.orm.deprecation [main] HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-22 02:02:53,434 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-22 02:02:53,490 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-22 02:02:54,249 INFO org.springframework.data.jpa.repository.query.QueryEnhancerFactory [main] Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-06-22 02:02:54,762 INFO org.hse.course.JMLBot.JmlBotApplication [main] Started JmlBotApplication in 3.828 seconds (process running for 4.513)
+2024-06-22 02:03:10,393 INFO org.hse.course.JMLBot.domain.application.TelegramBot [JMLCourseBot Telegram Executor] Ответ пользователю Евгений
+2024-06-22 02:08:23,170 INFO org.hse.course.JMLBot.domain.application.TelegramBot [JMLCourseBot Telegram Executor] Ответ пользователю Евгений
+2024-06-22 02:16:17,011 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-22 02:16:17,013 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2024-06-22 02:16:17,016 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2024-06-22 02:16:21,239 INFO org.hse.course.JMLBot.JmlBotApplication [main] Starting JmlBotApplication using Java 17.0.11 with PID 1744 (C:\JMLBot\target\classes started by Sutya in C:\JMLBot)
+2024-06-22 02:16:21,240 DEBUG org.hse.course.JMLBot.JmlBotApplication [main] Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-06-22 02:16:21,241 INFO org.hse.course.JMLBot.JmlBotApplication [main] No active profile set, falling back to 1 default profile: "default"
+2024-06-22 02:16:21,633 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-22 02:16:21,691 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 49 ms. Found 2 JPA repository interfaces.
+2024-06-22 02:16:22,032 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-22 02:16:22,083 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-06-22 02:16:22,115 INFO org.hibernate.cache.internal.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2024-06-22 02:16:22,369 INFO org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-22 02:16:22,394 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2024-06-22 02:16:22,566 INFO com.zaxxer.hikari.pool.HikariPool [main] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4a216eb4
+2024-06-22 02:16:22,567 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2024-06-22 02:16:22,602 WARN org.hibernate.orm.deprecation [main] HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-22 02:16:23,640 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-22 02:16:23,698 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-22 02:16:24,496 INFO org.springframework.data.jpa.repository.query.QueryEnhancerFactory [main] Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-06-22 02:16:25,024 INFO org.hse.course.JMLBot.JmlBotApplication [main] Started JmlBotApplication in 4.137 seconds (process running for 4.924)
+2024-06-22 02:28:37,698 INFO org.hse.course.JMLBot.domain.application.TelegramBot [JMLCourseBot Telegram Executor] Пользователь сохранён: User(chatId=2136969449, firstName=Евгений, lastName=null, userName=null, registeredAt=2024-06-22 02:28:37.683)
+2024-06-22 02:28:37,698 INFO org.hse.course.JMLBot.domain.application.TelegramBot [JMLCourseBot Telegram Executor] Ответ пользователю Евгений
