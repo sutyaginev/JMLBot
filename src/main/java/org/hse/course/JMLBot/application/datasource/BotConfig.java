@@ -1,6 +1,6 @@
 package org.hse.course.JMLBot.application.datasource;
 
-import lombok.Data;
+import lombok.*;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
