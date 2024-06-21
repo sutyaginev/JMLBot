@@ -1,5 +1,6 @@
 package org.hse.course.JMLBot.domain.application;
 
+import lombok.extern.slf4j.Slf4j;
 import org.hse.course.JMLBot.application.datasource.BotConfig;
 import org.springframework.stereotype.Component;
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;
@@ -7,6 +8,7 @@ import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
 import org.telegram.telegrambots.meta.api.objects.Update;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 
+@Slf4j
 @Component
 public class TelegramBot extends TelegramLongPollingBot {
 
@@ -48,6 +50,8 @@ public class TelegramBot extends TelegramLongPollingBot {
     private void startCommandReceived(long chatId, String name) {
 
         String answer = "Привет, " + name + ", добро пожаловать!";
+        log.info("Ответ пользователю " + name);
+
         sendMessage(chatId, answer);
 
     }
@@ -66,7 +70,7 @@ public class TelegramBot extends TelegramLongPollingBot {
         try {
             execute(message);
         } catch (TelegramApiException e) {
-            throw new RuntimeException(e);
+            log.error("Произошла ошибка: " + e.getMessage());
         }
     }
 }

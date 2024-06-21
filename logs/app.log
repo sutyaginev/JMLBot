@@ -1,0 +1,9 @@
+2024-06-21 20:27:41,264 INFO org.hse.course.JMLBot.JmlBotApplication[1.] [main] Starting JmlBotApplication using Java 17.0.11 with PID 6892 (C:\JMLBot\target\classes started by Sutya in C:\JMLBot)
+2024-06-21 20:27:41,266 DEBUG org.hse.course.JMLBot.JmlBotApplication[1.] [main] Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-06-21 20:27:41,267 INFO org.hse.course.JMLBot.JmlBotApplication[1.] [main] No active profile set, falling back to 1 default profile: "default"
+2024-06-21 20:27:42,478 INFO org.hse.course.JMLBot.JmlBotApplication[1.] [main] Started JmlBotApplication in 1.559 seconds (process running for 2.375)
+2024-06-21 20:27:50,306 INFO org.hse.course.JMLBot.domain.application.TelegramBot[1.] [JMLCourseBot Telegram Executor] Ответ пользователю Евгений
+2024-06-21 20:33:40,682 INFO org.hse.course.JMLBot.JmlBotApplication [main] Starting JmlBotApplication using Java 17.0.11 with PID 15356 (C:\JMLBot\target\classes started by Sutya in C:\JMLBot)
+2024-06-21 20:33:40,683 DEBUG org.hse.course.JMLBot.JmlBotApplication [main] Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-06-21 20:33:40,684 INFO org.hse.course.JMLBot.JmlBotApplication [main] No active profile set, falling back to 1 default profile: "default"
+2024-06-21 20:33:41,926 INFO org.hse.course.JMLBot.JmlBotApplication [main] Started JmlBotApplication in 1.57 seconds (process running for 2.295)
