@@ -1,0 +1,210 @@
+2024-06-21 21:56:54,832 INFO org.hse.course.JMLBot.JmlBotApplication [main] Starting JmlBotApplication using Java 17.0.11 with PID 25236 (C:\JMLBot\target\classes started by Sutya in C:\JMLBot)
+2024-06-21 21:56:54,833 DEBUG org.hse.course.JMLBot.JmlBotApplication [main] Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-06-21 21:56:54,834 INFO org.hse.course.JMLBot.JmlBotApplication [main] No active profile set, falling back to 1 default profile: "default"
+2024-06-21 21:56:55,248 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-21 21:56:55,297 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 41 ms. Found 1 JPA repository interface.
+2024-06-21 21:56:55,646 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-21 21:56:55,707 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-06-21 21:56:55,742 INFO org.hibernate.cache.internal.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2024-06-21 21:56:56,030 INFO org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-21 21:56:56,054 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2024-06-21 21:56:56,232 INFO com.zaxxer.hikari.pool.HikariPool [main] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@340cb97f
+2024-06-21 21:56:56,234 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2024-06-21 21:56:56,269 WARN org.hibernate.orm.deprecation [main] HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-21 21:56:57,241 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-21 21:56:57,299 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-21 21:56:58,330 INFO org.hse.course.JMLBot.JmlBotApplication [main] Started JmlBotApplication in 3.865 seconds (process running for 4.701)
+2024-06-21 21:57:00,268 INFO org.hse.course.JMLBot.domain.application.TelegramBot [JMLCourseBot Telegram Executor] Ответ пользователю Евгений
+2024-06-21 22:19:51,920 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-21 22:19:51,923 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2024-06-21 22:19:51,925 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2024-06-21 22:48:14,250 INFO org.hse.course.JMLBot.JmlBotApplication [main] Starting JmlBotApplication using Java 17.0.11 with PID 17216 (C:\JMLBot\target\classes started by Sutya in C:\JMLBot)
+2024-06-21 22:48:14,251 DEBUG org.hse.course.JMLBot.JmlBotApplication [main] Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-06-21 22:48:14,252 INFO org.hse.course.JMLBot.JmlBotApplication [main] No active profile set, falling back to 1 default profile: "default"
+2024-06-21 22:48:14,640 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-21 22:48:14,693 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 47 ms. Found 2 JPA repository interfaces.
+2024-06-21 22:48:15,032 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-21 22:48:15,088 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-06-21 22:48:15,123 INFO org.hibernate.cache.internal.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2024-06-21 22:48:15,392 INFO org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-21 22:48:15,416 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2024-06-21 22:48:15,594 INFO com.zaxxer.hikari.pool.HikariPool [main] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7971c2a9
+2024-06-21 22:48:15,595 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2024-06-21 22:48:15,627 WARN org.hibernate.orm.deprecation [main] HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-21 22:48:16,524 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-21 22:48:16,615 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-21 22:48:17,555 INFO org.hse.course.JMLBot.JmlBotApplication [main] Started JmlBotApplication in 3.627 seconds (process running for 4.466)
+2024-06-21 22:48:17,927 INFO org.hse.course.JMLBot.domain.application.TelegramBot [JMLCourseBot Telegram Executor] Ответ пользователю Евгений
+2024-06-21 22:48:33,110 INFO org.hse.course.JMLBot.domain.application.TelegramBot [JMLCourseBot Telegram Executor] Ответ пользователю Евгений
+2024-06-21 22:49:58,677 ERROR org.telegram.telegrambots.updatesreceivers.DefaultBotSession [JMLCourseBot Telegram Executor] Identifier of entity 'org.hse.course.JMLBot.domain.model.Pun' must be manually assigned before calling 'persist()'
+org.springframework.orm.jpa.JpaSystemException: Identifier of entity 'org.hse.course.JMLBot.domain.model.Pun' must be manually assigned before calling 'persist()'
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:341)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:241)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:550)
+	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:61)
+	at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:335)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:152)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:165)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223)
+	at jdk.proxy2/jdk.proxy2.$Proxy107.save(Unknown Source)
+	at org.hse.course.JMLBot.domain.application.TelegramBot.addPun(TelegramBot.java:138)
+	at org.hse.course.JMLBot.domain.application.TelegramBot.onUpdateReceived(TelegramBot.java:85)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.telegram.telegrambots.meta.generics.LongPollingBot.onUpdatesReceived(LongPollingBot.java:27)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$HandlerThread.run(DefaultBotSession.java:312)
+Caused by: org.hibernate.id.IdentifierGenerationException: Identifier of entity 'org.hse.course.JMLBot.domain.model.Pun' must be manually assigned before calling 'persist()'
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:209)
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:137)
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:175)
+	at org.hibernate.event.internal.DefaultPersistEventListener.persist(DefaultPersistEventListener.java:93)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:77)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:54)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:127)
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:757)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:741)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:319)
+	at jdk.proxy2/jdk.proxy2.$Proxy101.persist(Unknown Source)
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.save(SimpleJpaRepository.java:628)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:354)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:277)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:170)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:158)
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:516)
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:285)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:628)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:168)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:143)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:392)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	... 12 common frames omitted
+2024-06-21 22:53:42,648 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-21 22:53:42,651 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2024-06-21 22:53:42,655 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2024-06-21 22:53:46,190 INFO org.hse.course.JMLBot.JmlBotApplication [main] Starting JmlBotApplication using Java 17.0.11 with PID 8456 (C:\JMLBot\target\classes started by Sutya in C:\JMLBot)
+2024-06-21 22:53:46,192 DEBUG org.hse.course.JMLBot.JmlBotApplication [main] Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-06-21 22:53:46,192 INFO org.hse.course.JMLBot.JmlBotApplication [main] No active profile set, falling back to 1 default profile: "default"
+2024-06-21 22:53:46,577 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-21 22:53:46,625 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 40 ms. Found 2 JPA repository interfaces.
+2024-06-21 22:53:46,933 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-21 22:53:46,988 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-06-21 22:53:47,018 INFO org.hibernate.cache.internal.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2024-06-21 22:53:47,272 INFO org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-21 22:53:47,294 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2024-06-21 22:53:47,575 INFO com.zaxxer.hikari.pool.HikariPool [main] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@582e9152
+2024-06-21 22:53:47,576 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2024-06-21 22:53:47,608 WARN org.hibernate.orm.deprecation [main] HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-21 22:53:48,503 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-21 22:53:48,556 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-21 22:53:49,587 INFO org.hse.course.JMLBot.JmlBotApplication [main] Started JmlBotApplication in 3.703 seconds (process running for 4.404)
+2024-06-21 22:57:38,469 INFO org.hse.course.JMLBot.domain.application.TelegramBot [JMLCourseBot Telegram Executor] Ответ пользователю Евгений
+2024-06-21 22:59:36,084 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-21 22:59:36,087 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2024-06-21 22:59:36,091 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2024-06-21 22:59:39,657 INFO org.hse.course.JMLBot.JmlBotApplication [main] Starting JmlBotApplication using Java 17.0.11 with PID 3192 (C:\JMLBot\target\classes started by Sutya in C:\JMLBot)
+2024-06-21 22:59:39,658 DEBUG org.hse.course.JMLBot.JmlBotApplication [main] Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-06-21 22:59:39,659 INFO org.hse.course.JMLBot.JmlBotApplication [main] No active profile set, falling back to 1 default profile: "default"
+2024-06-21 22:59:40,037 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-21 22:59:40,087 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 43 ms. Found 2 JPA repository interfaces.
+2024-06-21 22:59:40,386 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-21 22:59:40,437 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-06-21 22:59:40,469 INFO org.hibernate.cache.internal.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2024-06-21 22:59:40,725 INFO org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-21 22:59:40,749 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2024-06-21 22:59:40,911 INFO com.zaxxer.hikari.pool.HikariPool [main] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7a04f730
+2024-06-21 22:59:40,913 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2024-06-21 22:59:40,946 WARN org.hibernate.orm.deprecation [main] HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-21 22:59:41,879 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-21 22:59:41,938 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-21 22:59:42,846 INFO org.hse.course.JMLBot.JmlBotApplication [main] Started JmlBotApplication in 3.495 seconds (process running for 4.205)
+2024-06-21 23:00:10,433 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-21 23:00:10,436 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2024-06-21 23:00:10,439 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2024-06-21 23:00:12,594 INFO org.hse.course.JMLBot.JmlBotApplication [main] Starting JmlBotApplication using Java 17.0.11 with PID 22204 (C:\JMLBot\target\classes started by Sutya in C:\JMLBot)
+2024-06-21 23:00:12,595 DEBUG org.hse.course.JMLBot.JmlBotApplication [main] Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-06-21 23:00:12,596 INFO org.hse.course.JMLBot.JmlBotApplication [main] No active profile set, falling back to 1 default profile: "default"
+2024-06-21 23:00:12,972 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-21 23:00:13,018 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 40 ms. Found 2 JPA repository interfaces.
+2024-06-21 23:00:13,309 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-21 23:00:13,358 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-06-21 23:00:13,387 INFO org.hibernate.cache.internal.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2024-06-21 23:00:13,638 INFO org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-21 23:00:13,670 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2024-06-21 23:00:13,823 INFO com.zaxxer.hikari.pool.HikariPool [main] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4d518c66
+2024-06-21 23:00:13,825 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2024-06-21 23:00:13,855 WARN org.hibernate.orm.deprecation [main] HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-21 23:00:14,744 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-21 23:00:14,811 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-21 23:00:15,851 INFO org.hse.course.JMLBot.JmlBotApplication [main] Started JmlBotApplication in 3.578 seconds (process running for 4.336)
+2024-06-21 23:12:55,467 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-21 23:12:55,469 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2024-06-21 23:12:55,473 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2024-06-21 23:12:59,210 INFO org.hse.course.JMLBot.JmlBotApplication [main] Starting JmlBotApplication using Java 17.0.11 with PID 25100 (C:\JMLBot\target\classes started by Sutya in C:\JMLBot)
+2024-06-21 23:12:59,211 DEBUG org.hse.course.JMLBot.JmlBotApplication [main] Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-06-21 23:12:59,212 INFO org.hse.course.JMLBot.JmlBotApplication [main] No active profile set, falling back to 1 default profile: "default"
+2024-06-21 23:12:59,595 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-21 23:12:59,642 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 40 ms. Found 2 JPA repository interfaces.
+2024-06-21 23:12:59,951 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-21 23:13:00,001 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-06-21 23:13:00,032 INFO org.hibernate.cache.internal.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2024-06-21 23:13:00,285 INFO org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-21 23:13:00,313 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2024-06-21 23:13:00,477 INFO com.zaxxer.hikari.pool.HikariPool [main] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7a04f730
+2024-06-21 23:13:00,479 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2024-06-21 23:13:00,511 WARN org.hibernate.orm.deprecation [main] HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-21 23:13:01,397 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-21 23:13:01,454 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-21 23:13:02,366 INFO org.hse.course.JMLBot.JmlBotApplication [main] Started JmlBotApplication in 3.477 seconds (process running for 4.183)
+2024-06-21 23:14:34,896 ERROR org.telegram.telegrambots.updatesreceivers.DefaultBotSession [JMLCourseBot Telegram Executor] begin -1, end 7, length 7
+java.lang.StringIndexOutOfBoundsException: begin -1, end 7, length 7
+	at java.base/java.lang.String.checkBoundsBeginEnd(String.java:4608)
+	at java.base/java.lang.String.substring(String.java:2711)
+	at java.base/java.lang.String.substring(String.java:2684)
+	at org.hse.course.JMLBot.domain.application.TelegramBot.onUpdateReceived(TelegramBot.java:84)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.telegram.telegrambots.meta.generics.LongPollingBot.onUpdatesReceived(LongPollingBot.java:27)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$HandlerThread.run(DefaultBotSession.java:312)
+2024-06-21 23:15:01,385 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-21 23:15:01,388 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2024-06-21 23:15:01,392 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2024-06-21 23:15:05,333 INFO org.hse.course.JMLBot.JmlBotApplication [main] Starting JmlBotApplication using Java 17.0.11 with PID 15124 (C:\JMLBot\target\classes started by Sutya in C:\JMLBot)
+2024-06-21 23:15:05,334 DEBUG org.hse.course.JMLBot.JmlBotApplication [main] Running with Spring Boot v3.3.0, Spring v6.1.8
+2024-06-21 23:15:05,335 INFO org.hse.course.JMLBot.JmlBotApplication [main] No active profile set, falling back to 1 default profile: "default"
+2024-06-21 23:15:05,726 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-21 23:15:05,772 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 40 ms. Found 2 JPA repository interfaces.
+2024-06-21 23:15:06,077 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-21 23:15:06,129 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-06-21 23:15:06,159 INFO org.hibernate.cache.internal.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2024-06-21 23:15:06,411 INFO org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-21 23:15:06,440 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2024-06-21 23:15:06,596 INFO com.zaxxer.hikari.pool.HikariPool [main] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@78e68401
+2024-06-21 23:15:06,598 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2024-06-21 23:15:06,634 WARN org.hibernate.orm.deprecation [main] HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-21 23:15:07,583 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-21 23:15:07,635 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-21 23:15:08,555 INFO org.hse.course.JMLBot.JmlBotApplication [main] Started JmlBotApplication in 3.547 seconds (process running for 4.268)
+2024-06-21 23:15:15,268 ERROR org.telegram.telegrambots.updatesreceivers.DefaultBotSession [JMLCourseBot Telegram Executor] begin -1, end 7, length 7
+java.lang.StringIndexOutOfBoundsException: begin -1, end 7, length 7
+	at java.base/java.lang.String.checkBoundsBeginEnd(String.java:4608)
+	at java.base/java.lang.String.substring(String.java:2711)
+	at java.base/java.lang.String.substring(String.java:2684)
+	at org.hse.course.JMLBot.domain.application.TelegramBot.onUpdateReceived(TelegramBot.java:84)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.telegram.telegrambots.meta.generics.LongPollingBot.onUpdatesReceived(LongPollingBot.java:27)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$HandlerThread.run(DefaultBotSession.java:312)
