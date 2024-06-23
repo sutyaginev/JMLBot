@@ -150,8 +150,6 @@ public class TelegramBot extends TelegramLongPollingBot {
 
             User user = new User();
             user.setChatId(chatId);
-            user.setFirstName(chat.getFirstName());
-            user.setLastName(chat.getLastName());
             user.setUserName(chat.getUserName());
             user.setRegisteredAt(new Timestamp(System.currentTimeMillis()));
 
